@@ -52,7 +52,7 @@ function Home(props) {
           ) : null}
         </div>
         {/*Upcoming*/}
-        <div>
+        {/* <div>
           <h2 className="text-4xl text-center font-bold">Upcoming Movies</h2>
           {upcoming.length !== 0 ? (
             <div className="flex flex-wrap justify-center gap-3 m-5">
@@ -71,7 +71,7 @@ function Home(props) {
               })}
             </div>
           ) : null}
-        </div>
+        </div> */}
       </div>
     </>
   );
