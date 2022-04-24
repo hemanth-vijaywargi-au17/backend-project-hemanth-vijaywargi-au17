@@ -142,18 +142,18 @@ movieRoutes.get("/toprated", async (req, res) => {
   res.json(response.data.results);
 });
 
-movieRoutes.get("/upcoming", async (req, res) => {
-  let response = await axios.get(
-    "https://data-imdb1.p.rapidapi.com/movie/order/upcoming/",
-    {
-      headers: {
-        "x-rapidapi-host": "data-imdb1.p.rapidapi.com",
-        "x-rapidapi-key": `${process.env.RAPID_API_KEY}`,
-      },
-    }
-  );
-  res.json(response.data.results);
-});
+// movieRoutes.get("/upcoming", async (req, res) => {
+//   let response = await axios.get(
+//     "https://data-imdb1.p.rapidapi.com/movie/order/upcoming/",
+//     {
+//       headers: {
+//         "x-rapidapi-host": "data-imdb1.p.rapidapi.com",
+//         "x-rapidapi-key": `${process.env.RAPID_API_KEY}`,
+//       },
+//     }
+//   );
+//   res.json(response.data.results);
+// });
 
 movieRoutes.get("/search", async (req, res) => {
   let query = req.query.query;

@@ -49,7 +49,7 @@ const mapDispatchToProps = (dispatch) => {
     getAllSections: () => {
       dispatch(actions.getNowPlaying());
       dispatch(actions.getTopRated());
-      dispatch(actions.getUpcoming());
+      // dispatch(actions.getUpcoming());
     },
     getWatchlist: () => {
       dispatch(actions.getWatchlist());
